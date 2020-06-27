@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试正则对象</title>
+
+
+
+</head>
+<body>
+
+
+    <script>
+        var a = "尘归尘";
+
+        var encodeURI1 = encodeURI(a);
+
+        document.write(encodeURI1+"<br>");
+
+        var b = decodeURI(encodeURI1);
+
+        document.write(b+"<br>");
+
+
+
+        var str1 = "http://www.baidu.com?wd=传智播客";
+        var encode = encodeURI(str1);
+        document.write(encode+"<br>");
+        var s = decodeURI(encode);
+        document.write(s+"<br>");
+
+
+        var str2 = "http://www.baidu.com?wd=传智播客";
+        var encode2 = encodeURIComponent(str2);   /*encodeURIComponent编码方式更多*/
+        document.write(encode2+"<br>");
+        var s2 = decodeURIComponent(encode2);
+        document.write(s2+"<br>");
+
+
+
+        var num1 = NaN;
+
+        document.write((NaN==num1)+"<br>");    /*NaN六亲不认*/
+        document.write(isNaN(num1)+"<br>");
+
+
+        var evalStr = "alert('测试eval')";
+        eval(evalStr);
+
+    </script>
+</body>
+</html>

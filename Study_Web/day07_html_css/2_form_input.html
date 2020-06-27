@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单项标签</title>
+</head>
+<body>
+<form>
+    <label for="username">
+        用户名：
+    </label>
+    <input type="text" name="username" placeholder="请输入用户名" id="username"><br>
+
+
+    <label for="password">
+        密码：
+    </label>
+    <input type="password" name="password" placeholder="请输入密码" id="password"><br>
+
+    请选择性别：
+    <input type="radio" name="gender" value="male" checked>男
+    <input type="radio" name="gender" value="female">女<br>
+
+
+    请选择爱好：
+    <input type="checkbox" name="hobby" value="shopping">逛街
+    <input type="checkbox" name="hobby" value="java" checked>Java
+    <input type="checkbox" name="hobby" value="game">游戏<br>
+
+
+    上传文件：
+    <input type="file" name="file"><br>
+
+    隐藏域：
+    <input type="hidden" name="hidden"><br>
+
+    取色器：
+    <input type="color" name="color"><br>
+
+    出生日期：
+    <input type="date" name="birthday"><br>
+
+    邮箱：
+    <input type="email" name="email"><br>   <!--会做正则检测，是否有@-->
+
+    年龄：
+    <input type="number" placeholder="请输入年龄" name="age"><br>  <!--只能输入数字-->
+
+    <input type="submit" value="登录"><br>
+    <input type="button" value="一个暂时没什么作用的按钮"><br>
+    <input type="image" src="../day06_html/image/banner_3.jpg" width="20%">   <!-- 图片可以提交表单 -->
+
+</form>
+</body>
+</html>

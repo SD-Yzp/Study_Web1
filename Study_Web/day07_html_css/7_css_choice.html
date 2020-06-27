@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+
+    <style>
+        /*优先级：id选择器>类选择器>元素选择器*/
+
+        div{
+            color: red;
+        }
+
+        #div1{
+            color: blue;
+        }
+
+        .cls1{
+            color: darkorange;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="div1" class="cls1">
+        选择器测试
+    </div>
+
+    <div>
+        选择器测试
+    </div>
+
+    <div class="cls1">
+        选择器测试
+    </div>
+
+    <p class="cls1">
+        选择器测试
+    </p>
+
+
+</body>
+</html>

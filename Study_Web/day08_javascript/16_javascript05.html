@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试正则对象</title>
+
+
+
+</head>
+<body>
+<!--    <input type="text" id="input1">-->
+
+    <script>
+        var reg1 = new RegExp(/^\w{6,}$/);
+
+        var reg2 = /^\w{6,12}$/;
+
+
+        var b = "sadsdfasdfasdfsadfsdfsdf";
+
+
+
+
+        var flag1 = reg1.test(b);
+        var flag2 = reg2.test(b);
+        document.write(flag1+"<br>");
+        document.write(flag2+"<br>");
+    </script>
+</body>
+</html>

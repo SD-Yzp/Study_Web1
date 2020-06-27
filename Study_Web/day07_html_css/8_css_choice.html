@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+
+
+    <style>
+
+        /*选择所有元素*/
+        *{
+            font-size: 30px;
+        }
+
+        /*并集选择器*/
+        #div1,#p1{
+            color: darkorange;
+        }
+
+        /*子选择器：筛选选择器1元素下的选择器2元素*/
+        div p{
+            color:rebeccapurple;
+        }
+
+        div > p{
+            border: 1px solid;
+        }
+
+        input[type="text"]{
+            border: 5px solid;
+        }
+
+
+        a:link{
+            color: pink;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="div2">
+        选择器测试1
+
+        <div>
+            选择器测试2
+
+        </div>
+
+        <p>
+
+            选择器测试3
+        </p>
+    </div>
+
+
+    <div id="div1">
+        选择器测试4
+
+    </div>
+
+
+    <p id="p1">
+        选择器测试5
+    </p>
+
+    <p>
+        <div>
+            选择器测试6
+        </div>
+        <p>
+            选择器测试7
+        </p>
+    </p>
+
+    <input type="text"><br>
+    <input type="password">
+
+    <br>
+
+    <a href="#">测试伪类选择器</a>
+
+</body>
+</html>
